@@ -1,2 +1,2 @@
-# Galaxy-park
+# Stellar Park
 Proyecto de Gaes
