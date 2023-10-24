@@ -248,70 +248,70 @@ LANGUAGE PLPGSQL;
 -- Desencadenadores para tablas específicas
 
 -- Ejemplo para la tabla tab_ciudades
-CREATE OR REPLACE TRIGGER tri_del_tabla_login AFTER DELETE ON tab_login
+CREATE TRIGGER tri_del_tabla_login AFTER DELETE ON tab_login
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_login BEFORE INSERT OR UPDATE ON tab_login
+CREATE TRIGGER tri_act_tabla_login BEFORE INSERT OR UPDATE ON tab_login
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_personas  AFTER DELETE ON tab_personas
+CREATE TRIGGER tri_del_tabla_personas  AFTER DELETE ON tab_personas
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_personas BEFORE INSERT OR UPDATE ON tab_personas
+CREATE TRIGGER tri_act_tabla_personas BEFORE INSERT OR UPDATE ON tab_personas
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_vehi AFTER DELETE ON tab_vehi
+CREATE TRIGGER tri_del_tabla_vehi AFTER DELETE ON tab_vehi
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_vehi BEFORE INSERT OR UPDATE ON tab_vehi
+CREATE TRIGGER tri_act_tabla_vehi BEFORE INSERT OR UPDATE ON tab_vehi
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_precioxhora AFTER DELETE ON tab_precioxhora
+CREATE TRIGGER tri_del_tabla_precioxhora AFTER DELETE ON tab_precioxhora
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_precioxhora BEFORE INSERT OR UPDATE ON tab_precioxhora
+CREATE TRIGGER tri_act_tabla_precioxhora BEFORE INSERT OR UPDATE ON tab_precioxhora
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_mensualida AFTER DELETE ON tab_mensualidad
+CREATE TRIGGER tri_del_tabla_mensualida AFTER DELETE ON tab_mensualidad
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_mensualida BEFORE INSERT OR UPDATE ON tab_mensualidad
+CREATE TRIGGER tri_act_tabla_mensualida BEFORE INSERT OR UPDATE ON tab_mensualidad
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_clien AFTER DELETE ON tab_clien
+CREATE TRIGGER tri_del_tabla_clien AFTER DELETE ON tab_clien
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_clien BEFORE INSERT OR UPDATE ON tab_clien
+CREATE TRIGGER tri_act_tabla_clien BEFORE INSERT OR UPDATE ON tab_clien
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_gerente AFTER DELETE ON tab_gerente
+CREATE TRIGGER tri_del_tabla_gerente AFTER DELETE ON tab_gerente
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_gerente BEFORE INSERT OR UPDATE ON tab_gerente
+CREATE TRIGGER tri_act_tabla_gerente BEFORE INSERT OR UPDATE ON tab_gerente
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_parq AFTER DELETE ON tab_parq
+CREATE TRIGGER tri_del_tabla_parq AFTER DELETE ON tab_parq
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_parq BEFORE INSERT OR UPDATE ON tab_parq
+CREATE TRIGGER tri_act_tabla_parq BEFORE INSERT OR UPDATE ON tab_parq
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_reserva AFTER DELETE ON tab_reserva
+CREATE TRIGGER tri_del_tabla_reserva AFTER DELETE ON tab_reserva
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_reserva BEFORE INSERT OR UPDATE ON tab_reserva
+CREATE TRIGGER tri_act_tabla_reserva BEFORE INSERT OR UPDATE ON tab_reserva
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_timereal AFTER DELETE ON tab_puestos
+CREATE TRIGGER tri_del_tabla_timereal AFTER DELETE ON tab_puestos
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_timereal BEFORE INSERT OR UPDATE ON tab_puestos
+CREATE TRIGGER tri_act_tabla_timereal BEFORE INSERT OR UPDATE ON tab_puestos
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_del_tabla_coment AFTER DELETE ON tab_coment
+CREATE TRIGGER tri_del_tabla_coment AFTER DELETE ON tab_coment
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
-CREATE OR REPLACE TRIGGER tri_act_tabla_coment BEFORE INSERT OR UPDATE ON tab_coment
+CREATE TRIGGER tri_act_tabla_coment BEFORE INSERT OR UPDATE ON tab_coment
 FOR EACH ROW EXECUTE PROCEDURE fun_act_tabla();
 
 -- Repite el proceso para otras tablas según sea necesario
