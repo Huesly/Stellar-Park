@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps API Example</title>
+    <link rel="stylesheet" type="text/css" href="css/mapita.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <div class="main-container">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+        
+            <div id="info-parking">
+                <div id="info-panel">
+                    <span id="close-button" onclick="">X</span>
+                    <h2>Ruby Parking</h2>
+                    <p>Dirección: Carrera. 25 #45-22</p>
+                    <p>Teléfono: +57 312-576-3227</p>
+                    <p>Capacidad: <br>Motos: 50 puestos</br><br>Vehiculo: 4 puestos</br></p>
+                    <p>Tarifa:</p>
+                    <p>Hora: <br>Motos: $1.000</br><br>Vehiculo: $2.200</br></p>
+                    <p>Mensualidad: <br>Motos: $35.000</br><br>Vehiculo: $130.000</br></p>
+                    <p>Horarios: 7PM A 8PM Lunes a Domingo</p>
+                </div>
+            </div>
+        </div>
+
+
+    
+    <script src="js/scrmap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWxwWTLeVKjwYy-Gi3UKi4sG-UVw8qqGI&callback=initMap" async defer></script>
+</body>
+</html>

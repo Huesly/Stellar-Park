@@ -1,0 +1,84 @@
+/* Estilos para el fondo del formulario de inicio de sesión */
+.login-dark {
+  height: 1000px;
+  background: #7DA898;
+  background-size: cover;
+  position: relative;
+}
+
+/* Estilos para el formulario dentro del fondo */
+.login-dark form {
+  max-width: 360px;
+  width: 90%;
+  background-color: #CFF5E7;
+  padding: 50px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #3F7562;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la ilustración en el formulario */
+.login-dark .illustration {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #3F7562;
+}
+
+/* Estilos para los campos de entrada en el formulario */
+.login-dark form .form-control {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #264A3D;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-dark form .btn-primary {
+  background: #264A3D;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+}
+
+/* Cambio de color del botón al pasar el mouse o hacer clic */
+.login-dark form .btn-primary:hover,
+.login-dark form .btn-primary:active {
+  background: #50B791;
+  outline: none;
+}
+
+/* Estilos para el enlace 'olvidaste tu contraseña ' y 'Solicitar Membresia' */
+.login-dark form .forgot {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #4A7A5A;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Cambio de color del enlace al pasar el mouse o hacer clic */
+.login-dark form .forgot:hover,
+.login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+  color: #39B763;
+}
+
+/* Efecto visual del botón al hacer clic */
+.login-dark form .btn-primary:active {
+  transform: translateY(1px);
+  
+}

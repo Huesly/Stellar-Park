@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/registroparqueadero.css">
+
+	
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+
+			<h1>Bienvenido al registro de afiliados</h1><br>
+
+			<!-- Grupo: nit -->
+
+			<div class="formulario__grupo" id="grupo__nit">
+				<label for="nit" class="formulario__label">NIT:</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" id="nit" name="nit" maxlength="12" placeholder="Ejemplo: 12345678-9">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El NIT debe tener el formato correcto.</p>
+			</div>
+
+
+			<!-- Grupo: Nombre Parqueadero -->
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre del parqueadero:</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre del parqueadero">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre del parqueadero es requerido.</p>
+			</div>
+
+			
+			<!-- Grupo: Direccion-->
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Direccion:</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" id="direccion" name="direccion" placeholder="Direccion del parqueadero">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre del parqueadero es requerido.</p>
+			</div>
+			
+
+			<!-- Grupo: Horario -->
+
+			<div class="formulario__grupo" id="grupo__horario">
+				<label for="horario" class="formulario__label">Horario</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="horario" id="horario" placeholder="6am hasta 3pm">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Digita los horarios correctamente.</p>
+			</div>
+
+			
+			<!-- Grupo: Capacidad total -->
+
+			<div class="formulario__grupo" id="grupo__capacidad">
+				<label for="capacidad" class="formulario__label">Capacidad total</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="capacidad" id="capacidad" >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">por favor digitar la capacidad en digitos numericos.</p>
+			</div>
+			
+			<br>	
+
+			<!-- Grupo: Costo por hora del vehículo -->
+			<div class="formulario__grupo" id="grupo__Costo">
+			    <label for="vehiculo" class="formulario__label">Costo por hora del vehículo</label>
+			    <div class="formulario__grupo-input">
+			        <input type="text" class="formulario__input" id="vehiculo1" name="vehiculo1" placeholder="Digitar el costo por hora del vehículo">
+			    </div>
+			    <div id="campos-extra-vehiculo"></div>
+			    <button type="button" class="formulario__btn" id="agregarCampoVehiculo" onclick="agregarCampo('vehiculo')">Agregar</button>
+			    <p class="formulario__input-error">Por favor, digitar el costo en dígitos numéricos.</p>
+			</div>
+
+			
+			<!-- Grupo: Costo mensualidad -->
+			<div class="formulario__grupo" id="grupo__mensualidad">
+			    <label for="mensualidad" class="formulario__label">Costo mensualidad</label>
+			    <div class="formulario__grupo-input">
+			        <input type="text" class="formulario__input" id="mensualidad" name="mensualidad" placeholder="Digitar costo mensualidad"> 
+			    </div>
+			    <div id="campos-extra-mensualidad"></div>
+			    <button type="button" class="formulario__btn" id="agregarCamposMensualidad" onclick="agregarCampo2('mensualidad')">Agregar</button>
+			    <p class="formulario__input-error">Por favor, digitar la mensualidad en dígitos numéricos.</p>
+			</div>
+
+
+			
+
+			<!--salto de linea -->
+
+
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn" href="registropark.html">Siguiente</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formularioparqueadero.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
