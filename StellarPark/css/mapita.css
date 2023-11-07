@@ -23,7 +23,7 @@ body {
 
 #info-parking{
     width: 600px;
-    height: 550px;
+    height: 600px;
     margin: auto;
     position: relative;
     background-color: rgb(255, 255, 255);  
@@ -59,9 +59,7 @@ body {
     right: 0;
     bottom: 0;
     left: 50%; /* Centra el panel en la mitad derecha de la pantalla */
-    transform: translateX(50%); /* Desplaza el panel hacia la izquierda para centrarlo */
-    /* Agrega cualquier otro estilo que desees */
-    
+    transform: translateX(50%); /* Desplaza el panel hacia la izquierda para centrarlo */    
 }
 
 
