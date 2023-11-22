@@ -16,11 +16,13 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/navbar.css">
+
     </head>
 
     <body id="page-top">
 
-        <!-- Navigation-->
+        <!-- Navigation
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -31,9 +33,37 @@
                 <li class="sidebar-nav-item"><a href="#services">Servicios</a></li>
                 <li class="sidebar-nav-item"><a href="#información">Afíliate</a></li>
             </ul>
+        </nav> -->
+
+        <nav class="menu">
+            <section class="menu__container">
+            
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                
+                    <li class="menu__item menu__item--show">
+                        <a href="#about" class="menu__link">Nosotros </a>      
+                    </li>
+                
+                    <li class="menu__item  menu__item--show">
+                        <a href="#Parqueaderos" class="menu__link">Parqueaderos </a>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                        <a href="#services" class="menu__link">Servicios</a>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                        <a href="#informacion" class="menu__link">Afíliate</a>
+                    </li>
+                
+                </ul>
+            
+                <div class="menu__hamburguer">
+                    <img src="assets/menu.svg" class="menu__img">
+                </div>
+            </section>
         </nav>
-
-
 
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
@@ -60,7 +90,7 @@
         </section>
 
          
-        <section class="content-section" id="portfolio">
+        <section class="content-section" id="Parqueaderos">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Ubicaciones</h3>
@@ -167,7 +197,7 @@
         -->
 
 
-        <!-- Portfolio-->
+        <!-- Map redirection-->
         
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white" id="información">
@@ -204,13 +234,19 @@
                 <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
             </div>
         </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
 
+        <!-- Scroll to Top Button-->
+
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- Bootstrap core JS-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--  Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+
+        <script src="js/navbar.js"></script>
         
     </body>
 </html>
