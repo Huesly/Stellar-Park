@@ -109,6 +109,8 @@ formulario.addEventListener('submit', (e) => {
 
 	const terminos = document.getElementById('terminos');
 
+
+	
 // campos.usuario
 
 	if(campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked && campos.dni ){

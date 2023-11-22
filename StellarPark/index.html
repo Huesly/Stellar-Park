@@ -16,24 +16,42 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/navbar.css">
+
     </head>
 
     <body id="page-top">
 
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Menu de opciones</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">Sobre nosotros</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Lugares</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Servicios</a></li>
-                <li class="sidebar-nav-item"><a href="#información">Afíliate</a></li>
-            </ul>
+
+        <nav class="menu">
+            <section class="menu__container">
+            
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                
+                    <li class="menu__item menu__item--show">
+                        <a href="#about" class="menu__link">Nosotros </a>      
+                    </li>
+                
+                    <li class="menu__item  menu__item--show">
+                        <a href="#Parqueaderos" class="menu__link">Parqueaderos </a>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                        <a href="#services" class="menu__link">Servicios</a>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                        <a href="#informacion" class="menu__link">Afíliate</a>
+                    </li>
+                
+                </ul>
+            
+                <div class="menu__hamburguer">
+                    <img src="assets/menu.svg" class="menu__img">
+                </div>
+            </section>
         </nav>
-
-
 
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
@@ -60,7 +78,7 @@
         </section>
 
          
-        <section class="content-section" id="portfolio">
+        <section class="content-section" id="Parqueaderos">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Ubicaciones</h3>
@@ -72,7 +90,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Ruby Parking</div>
-                                    <p class="mb-0">Un parqueadero al servicio de todos</p>
+                                    <p class="mb-0">Un parqueadero al servicio de todos.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/2.jpg" alt="..." />
@@ -83,7 +101,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Carvajal's parking</div>
-                                    <p class="mb-0">Aparcar nunca fue tan fácil y conveniente: Ven y experimenta la excelencia en estacionamiento.</p>
+                                    <p class="mb-0">Aparcar nunca fue tan fácil y conveniente.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/3.jpg" alt="..." />
@@ -94,7 +112,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Cami Park</div>
-                                    <p class="mb-0">Tu espacio seguro, tu comodidad primordial: ¡Bienvenido a tu parqueadero de confianza!</p>
+                                    <p class="mb-0">Tu espacio seguro, tu comodidad primordial.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/4.jpg" alt="..." />
@@ -105,7 +123,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Parqueadero Sotomayor</div>
-                                    <p class="mb-0">Donde cada estacionamiento es un cuidado seguro: Nuestro compromiso es tu tranquilidad.</p>
+                                    <p class="mb-0">Donde cada estacionamiento es un cuidado seguro.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/night-city.jpg" alt="..." />
@@ -151,40 +169,15 @@
                 </div>
             </div>
         </section>
-        <!-- Callout
 
-        
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section>
-        -->
-
-
-        <!-- Portfolio-->
         
         <!-- Call to Action-->
-        <section class="content-section bg-primary text-white" id="información">
+        <section class="content-section bg-primary text-white" id="informacion">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">¿Deseas que tu parqueadero sea afiliado?</h2>
-                <a class="btn btn-xl btn-light me-4" href="registroafiliados.html">¡Inscríbete ahora!</a>
+                <a class="btn btn-xl btn-light me-4" href="registroafiliado.html">¡Inscríbete ahora!</a>
             </div>
         </section>
-
-
-
-        <!-- Map
-        <div class="map" id="contact" href="map.html">
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center=7.123075010842026, -73.11779585741755&zoom=15&size=256x440&scale=1&key=AIzaSyBWxwWTLeVKjwYy-Gi3UKi4sG-UVw8qqGI" alt="Mapa de Stellar Park">
-        </div>
-        -->
-        
 
 
         <!-- Footer-->
@@ -204,13 +197,19 @@
                 <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
             </div>
         </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
 
+        <!-- Scroll to Top Button-->
+
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- Bootstrap core JS-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--  Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+
+        <script src="js/navbar.js"></script>
         
     </body>
 </html>
